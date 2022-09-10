@@ -1,1 +1,1 @@
-# Rapid-FriendALabs-Web-Starter
+# A mulitchain web DApp starter
