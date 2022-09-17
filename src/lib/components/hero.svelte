@@ -1,37 +1,21 @@
 <script setup lang="ts">
-import { counter,decrease,increase } from "../stores/counter.store";
-
-let counterValue: number;
-
-	counter.subscribe(v => {
-		counterValue = v;
-	});
   </script>
 
   <template>
-    <div
-      class="hero min-h-screen"
-      style="background-image: url(https://api.lorem.space/image/shoes?w=1000&h=800)"
-    >
-      <div class="bg-opacity-45 hero-overlay"></div>
-      <div class="hero-content text-center text-neutral-content">
-        <div class="max-w-md">
-          <h1 class="mb-5 font-poppins text-5xl font-bold">Hello there</h1>
-          <p class="mb-5 font-inter">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-            est laborum.
-          </p>
-          <button class="btn btn-primary font-poppins">Get Started</button>
+    <div class="hero min-h-screen bg-base-100">
+      <div class="hero-content flex-col lg:flex-row-reverse">
+        <img src="https://f8n-production-collection-assets.imgix.net/0xCB68c1F7700BD1Cf52387701AE904424Cf8cBE40/7/nft.jpg?q=80&auto=format%2Ccompress&cs=srgb&max-w=1000&max-h=1000" class="w-1/2 rounded-lg shadow-2xl" />
+        <div class="mr-18 pr-4">
+          <h1 class="text-8xl mb-4 text-gray-800" style="font-family: Butler">Kiyonaga x Death Note</h1>
+            <p class="mb-8">
+              "Humans Are A Riot" <br />
+
+This illustration is inspired by a Torii Kiyonaga ukiyo-e from 1782 as well as Ryûk (リューク) from the 2003 shounen series Death Note (デスノート, Desu Nōto).
+            </p>
+            <img src="../src/assets/ethlogo.png" class="w-8" />
+            <p>0.28</p>
+          <button class="btn btn-primary text-white">Buy Now</button>
         </div>
       </div>
-    </div>
-    <div class="m-2 text-center font-poppins text-neutral-content">
-      <button class="btn btn-circle btn-sm mr-2 text-accent" on:click="{decrease}">-</button>
-      Counter: { counterValue }
-      <button class="btn btn-circle btn-sm ml-2 text-accent" on:click="{increase}">+</button>
     </div>
   </template>

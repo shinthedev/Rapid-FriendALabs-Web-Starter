@@ -55,5 +55,9 @@
     "vitest": "^0.23.1",
     "vitest-svelte-kit": "^0.0.7"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "@walletconnect/client": "^1.8.0",
+    "@walletconnect/qrcode-modal": "^1.8.0"
+  }
 }

@@ -5,6 +5,7 @@ module.exports = {
 		fontFamily: {
 			inter: ['inter', 'sans-serif'],
 			poppins: ['poppins', 'serif'],
+			butler: ['butler', 'serif'],
 			'fira-mono': ['fira-mono']
 		}
 	},

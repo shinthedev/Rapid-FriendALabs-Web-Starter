@@ -1,10 +1,7 @@
 <script lang="ts">
-import Themeswitcher from "./themeswitcher.svelte";
-
-
 </script>
 
-<div class="navbar bg-neutral shadow-md">
+<div class="navbar ">
 	<div class="navbar-start">
 		<div class="dropdown">
 			<!-- svelte-ignore a11y-label-has-associated-control -->
@@ -27,17 +24,17 @@ import Themeswitcher from "./themeswitcher.svelte";
 				tabindex="0"
 				class="dropdown-content menu rounded-box menu-compact mt-3 w-52 bg-base-100 p-2 font-poppins shadow"
 			>
-				<li><a href="/">Homepage</a></li>
+				<li><a href="/">Home</a></li>
 				<li><a href="/about">About</a></li>
-				<li><a href="/country">Country</a></li>
+				<li><a href="/country">Marketplace</a></li>
 			</ul>
 		</div>
 	</div>
 	<div class="navbar-center">
-		<!-- svelte-ignore a11y-missing-attribute -->
-		<a class="upper-case btn btn-ghost font-poppins text-xl text-primary">daisyUI</a>
+		<img src="../src/assets/Logo.png" class="w-36" />
 	</div>
+	
   <div class="navbar-end">
-    <Themeswitcher />
+	<button class="btn btn-outline mr-4 mt-4 px-8">Login</button>
   </div>
 </div>
